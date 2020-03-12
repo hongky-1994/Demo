@@ -55,3 +55,41 @@ p {
   flex-direction: column;
   align-items: center;
 }
+.user-info {
+  background-color: aquamarine;
+  width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.info__header {
+  display: flex;
+  padding: 10px 10px 0 10px;
+}
+.info__row--item a {
+  text-decoration: none;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+.info__row--item {
+  background-color: #68829e;
+  margin-left: 10px;
+  color: #ffffff;
+  width: 120px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+.info__row--item:hover {
+  box-shadow: 0 -6px 10px #343d64;
+}
+.info__body {
+  background-color: #6e7e85;
+  height: 300px;
+}
