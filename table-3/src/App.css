@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+}
+
+.tittle {
+  margin: 20px;
+}
+.btn-control {
+  display: flex;
+  padding: 0 20px;
+}
+.tr--edit:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+@media (min-width: 1200px) { 
+  .App{
+    margin: 0 200px
+  };
+ }

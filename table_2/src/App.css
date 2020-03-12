@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.modal-background{
+  background-color: #99999950;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.modal-container{
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 400px;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-body input {
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #cacaca;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+.modal-body input:focus{
+  box-shadow: 0 0 5px #ff000050;
+}
+.btn-add{
+  align-self: start;
+  margin: 20px ;
+  width: 150px;
+}
