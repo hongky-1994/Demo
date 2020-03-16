@@ -66,8 +66,12 @@
   background-color: #123456;
   box-shadow: 0 0 10px #000000;
   margin: 30px;
+  overflow: hidden;
 }
 .card__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .card__head .title {
   text-align: center;
@@ -121,4 +125,40 @@
 .info__row--subtitle {
   color: gray;
   font-size: bold;
+}
+.btn {
+  padding: 20px;
+  min-width: 100px;
+  border: 0px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 20px;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(60, 126, 6);
+}
+
+.btn-color-1 {
+  background-color: rgb(170, 151, 129);
+  color: #ffffff;
+}
+
+.weather__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page__title {
+  margin: 20px 0;
+  font-size: 32px;
+}
+.page__input {
+  padding: 10px;
+  background-color: beige;
+  border-radius: 5px;
 }

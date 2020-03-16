@@ -1,0 +1,102 @@
+.navbar .navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+.navbar .nav-item {
+  margin-right: 40px;
+}
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.w100 {
+  width: 100%;
+}
+.homepage-ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homepage-ul .item {
+  height: 50px;
+  text-align: center;
+  background-color: lightgoldenrodyellow;
+  width: 300px;
+  transition: 0.3s ease;
+  border-radius: 20px;
+  cursor: pointer;
+  line-height: 50px;
+  margin: 10px;
+}
+.homepage-ul .item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.homepage .item:hover {
+  content: "abcs";
+  width: 400px;
+  background-color: blueviolet;
+  color: #ffffff;
+}
+.photoHolder {
+  width: 200px;
+  margin: 10px;
+  box-shadow: 0 0 10px cadetblue;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.img-holder,
+.img-holder img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px lightblue;
+}
+.photo-album {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 16px;
+  color: gray;
+}
+.photo-name {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 17 px;
+  color: cadetblue;
+}
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.loading {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(109, 109, 109, 0.89);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 64px;
+  font-weight: bolder;
+  z-index: 10;
+}
+.todosList {
+  width: 80%;
+  margin: auto;
+}
+
+.todo-subtitle {
+  display: flex;
+}
+.todo-subtitle * {
+  margin-right: 20px;
+}
+.completed {
+  background-color: lawngreen;
+  text-decoration: line-through;
+}
