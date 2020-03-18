@@ -4,7 +4,8 @@ const initialState = {
     { name: "Pham Hong Hanh", age: 12, job: "Colleger", gender: "Female" }
   ],
   isloading: false,
-  error: null
+  error: null,
+  isEditing: false
 };
 
 const rootReducer = (state = initialState, payload) => {
@@ -15,6 +16,18 @@ const rootReducer = (state = initialState, payload) => {
       return { ...state, users: [...payload.data], isloading: false };
     case "FETCH_DATA_FAILURE":
       return state;
+    case "ADD_NEW_USER":
+      return { ...state, users: [...state.users, payload.data] };
+    case "REMOVE_USER":
+      return {
+        ...state,
+        users: [
+          ...state.users.slice(0, payload.index),
+          ...state.users.slice(payload.index + 1)
+        ]
+      };
+    case "IS_EDITING":
+      return { ...state, isEditing: !state.isEditing };
     default:
       return { ...state, error: payload.error };
   }
