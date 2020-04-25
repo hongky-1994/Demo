@@ -1,0 +1,36 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0; 
+}
+.login__page{
+  background: url('./utils/background/login-page.jpeg');
+  width: 100%;
+  height: 100vh;
+}
+.login__container{
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+.home-page{
+  height: 100vh;
+}
+.avata-container{
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-chat{
+  justify-self: flex-start;
+  max-width: 500px;
+  /* word-break: normal; */
+  word-wrap: break-word;
+  text-align: justify;
+}
+.message-chat{
+  display: inline-block;
+}
